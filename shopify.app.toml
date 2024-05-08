@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "4d0ba15eeb92ba98283d8b90298ca419"
+name = "medstore-remix"
+handle = "medstore-remix"
+application_url = "https://normal-ending-will-wins.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "medstore-dev.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://normal-ending-will-wins.trycloudflare.com/auth/callback",
+  "https://normal-ending-will-wins.trycloudflare.com/auth/shopify/callback",
+  "https://normal-ending-will-wins.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
